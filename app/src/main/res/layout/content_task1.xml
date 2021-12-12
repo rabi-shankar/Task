@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginTop="?attr/actionBarSize">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:overScrollMode="never"
+        app:layoutManager="LinearLayoutManager"
+        tools:itemCount="1"
+        tools:listitem="@layout/item_section" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:padding="12dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/add_another_section"
+        android:textColor="@color/white"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/add_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/section_edit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/stroke_box"
+            android:gravity="center_vertical"
+            android:hint="@string/add_new_section"
+            android:textSize="14sp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:maxLines="1"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/section_edit"
+            android:text="@string/save"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentStart="true"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/section_edit"
+            android:text="@string/cancel"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentEnd="true"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_undraw_blank_canvas"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/click_on_add_new_section_to_add_section"/>
+
+    </LinearLayout>
+</RelativeLayout>

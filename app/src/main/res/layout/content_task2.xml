@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp"
+    android:layout_marginTop="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/series_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/_2_3_10_15_26_35_50_63"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="32dp"
+            android:textSize="100sp"
+            android:textStyle="bold"
+            tools:text="50"
+            android:maxLines="1"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/index_edit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/stroke_box"
+            android:gravity="center"
+            android:layout_marginTop="32dp"
+            android:hint="@string/enter_index_number"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:maxLines="1"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:id="@+id/index_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:text="@string/index_0_to"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

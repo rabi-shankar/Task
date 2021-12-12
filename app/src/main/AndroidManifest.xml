@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rabi.task">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Task">
+        <activity
+            android:name=".owner.activity.Task2ImpActivity"
+            android:exported="true"
+            android:label="@string/series_implement"
+            android:theme="@style/Theme.Task.NoActionBar" />
+        <activity
+            android:name=".owner.activity.Task2Activity"
+            android:exported="true"
+            android:label="@string/task_1"
+            android:theme="@style/Theme.Task.NoActionBar" />
+        <activity
+            android:name=".owner.activity.Task1Activity"
+            android:exported="true"
+            android:label="@string/task_1"
+            android:theme="@style/Theme.Task.NoActionBar" />
+        <activity
+            android:name=".owner.activity.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Task.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Task</string>
+    <string name="task_1">Task 1</string>
+    <string name="task_1_description"><![CDATA[<h1>Task 1</h1><br>Create a Nested Control form on the same project to add curriculum for the course in the following manner:<br><br><ul><li>&nbsp;&nbsp; Section 1 [Section-Name] (+)<li><li>&nbsp;&nbsp; On click of the (+) icon, a sub-control should get added for adding Lecture. The sub control will have Lecture-Name and Save Button</li><li>&nbsp;&nbsp; User should be allowed to add multiple lectures under same section</li><li>&nbsp;&nbsp; There should be another button to add another section</li></ul>]]></string>
+    <string name="task_2">Task 2</string>
+    <string name="task_2_description"><![CDATA[<h1>Task 2</h1><br>Find the missing number in the series:<br><br>&nbsp;&nbsp;&nbsp;&nbsp;2,3,10,15,26,35,50,63,?<br><br>Implement the solution within Android in which, a text box is given along with a button. User can enter any index of the series and at the button click, the page should display the number at that entered index.  <br><br><br><small>Click on Task to view solution.</small>]]></string>
+    <string name="add_new_lecture">Add new Lecture</string>
+    <string name="add_new_section">Add new Section</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="section_name">Section %d %s</string>
+    <string name="add_another_section">Add another section</string>
+    <string name="_2_3_10_15_26_35_50_63">2,3,10,15,26,35,50,63,?</string>
+    <string name="enter">Enter</string>
+    <string name="enter_index_number">Enter index number</string>
+    <string name="series_implement">Series Implement</string>
+    <string name="index_0_to">index range ( 0 to 10000 )</string>
+    <string name="processing">Processing …</string>
+    <string name="document">Document</string>
+    <string name="close">close</string>
+    <string name="assignment_mobile_app_development_on_iraitech_innovations_amp_technologies"><![CDATA[Assignment – Mobile App Development on Iraitech Innovations & Technologies]]></string>
+    <string name="https_rabi_shankar_github_io_resume">https://rabi-shankar.github.io/resume</string>
+    <string name="developed_by_rabi_shankar">Developed by Rabi shankar</string>
+    <string name="click_on_add_new_section_to_add_section">Click on \'ADD NEW SECTION\' to add section</string>
+</resources>
